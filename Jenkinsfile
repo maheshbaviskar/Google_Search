@@ -1,7 +1,7 @@
 node {
    def mvnHome
    stage('Preparation') { 
-      mvnHome = 'C:\\apache-maven-3.5.2'
+      mvnHome = 'C:/\apache-maven-3.5.2'
    }
    stage('Build') {
       
