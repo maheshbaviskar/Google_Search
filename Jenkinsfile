@@ -8,7 +8,7 @@ node {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
       } else {
-         mvn verify
+         bat "mvn install"
       }
    }
    stage('Results') {
