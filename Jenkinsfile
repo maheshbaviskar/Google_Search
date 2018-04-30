@@ -1,17 +1,15 @@
 pipeline {
-    agent any
-    stages {
-        stage('Compile Stage') 
-		{
-		
-		
-            steps {
-                withMaven(maven : 'maven-3.5.2')
-				{
-				sh 'mvn clean compile'
-				}
-			}
-		
-		}
-	}
+  agent any
+  stages {
+    stage('HelloWorld') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+    stage('git clone') {
+      steps {
+        echo 'test'
+      }
+    }
+  }
 }
