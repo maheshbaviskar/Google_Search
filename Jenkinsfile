@@ -1,15 +1,18 @@
-pipeline {
-  agent any
-  stages {
-    stage('HelloWorld') {
-      steps {
-        echo 'Hello World'
+node {
+   def mvnHome
+   stage('Preparation') { 
+      mvnHome = tool 'M3'
+   }
+   stage('Build') {
+      
+      if (isUnix()) {
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+      } else {
+         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
-    }
-    stage('git clone') {
-      steps {
-        echo 'test'
-      }
-    }
-  }
+   }
+   stage('Results') {
+      junit '**/target/surefire-reports/TEST-*.xml'
+      archive 'target/*.jar'
+   }
 }
