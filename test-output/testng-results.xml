@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Group of group Suite" duration-ms="9832" started-at="2018-04-30T10:34:20Z" finished-at="2018-04-30T10:34:30Z">
+    <groups>
+    </groups>
+    <test name="Group of group Test" duration-ms="9832" started-at="2018-04-30T10:34:20Z" finished-at="2018-04-30T10:34:30Z">
+      <class name="Test_GitIntegration.Test_GitIntegration.Google_Search">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:Test_GitIntegration.Test_GitIntegration.Google_Search@5c7fa833]" name="setupDriver" is-config="true" duration-ms="2985" started-at="2018-04-30T16:04:20Z" finished-at="2018-04-30T16:04:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="google_Search()[pri:0, instance:Test_GitIntegration.Test_GitIntegration.Google_Search@5c7fa833]" name="google_Search" duration-ms="4482" started-at="2018-04-30T16:04:23Z" finished-at="2018-04-30T16:04:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google_Search -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:Test_GitIntegration.Test_GitIntegration.Google_Search@5c7fa833]" name="closeDriver" is-config="true" duration-ms="2344" started-at="2018-04-30T16:04:28Z" finished-at="2018-04-30T16:04:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- Test_GitIntegration.Test_GitIntegration.Google_Search -->
+    </test> <!-- Group of group Test -->
+  </suite> <!-- Group of group Suite -->
+</testng-results>

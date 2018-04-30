@@ -1,0 +1,8 @@
+<suite name="Group of group Suite" verbose="1">
+  <test name="Group of group Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Test_GitIntegration.Test_GitIntegration.Google_Search"/>
+    </classes>
+  </test>
+</suite>
