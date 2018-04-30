@@ -31,7 +31,6 @@ public class Google_Search {
 		oDriver.findElement(By.name("btnK")).click();
 		WebElement wd= new WebDriverWait(oDriver, 30L).until(ExpectedConditions.presenceOfElementLocated(By.id("logocont")));
 		System.out.println(oDriver.getTitle());
-		
 	}
 	
 	@AfterTest
