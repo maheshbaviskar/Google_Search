@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Group of group Suite]">
+  <test name="Group of group Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Test_GitIntegration.Test_GitIntegration.Google_Search">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="google_Search"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Test_GitIntegration.Test_GitIntegration.Google_Search -->
+    </classes>
+  </test> <!-- Group of group Test(failed) -->
+</suite> <!-- Failed suite [Group of group Suite] -->
