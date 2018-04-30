@@ -9,7 +9,7 @@ node {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
       } else {
 		 
-         echo 'testng
+         echo 'testng'
       }
    }
 
