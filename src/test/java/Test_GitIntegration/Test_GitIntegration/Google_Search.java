@@ -1,5 +1,9 @@
 package Test_GitIntegration.Test_GitIntegration;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 //import org.testng.annotations.Parameters;
@@ -30,6 +35,11 @@ public class Google_Search {
 		oDriver.findElement(By.name("btnK")).click();
 		WebElement wd= new WebDriverWait(oDriver, 30L).until(ExpectedConditions.presenceOfElementLocated(By.id("logocont")));
 		System.out.println(oDriver.getTitle());
+	}
+	
+	@Test (dependsOnMethods="google_Search")
+	public void assertTest() {
+		AssertJUnit.assertEquals(oDriver.getTitle().toString(), "Salman Khan - Google Search");
 	}
 	
 	@AfterTest
