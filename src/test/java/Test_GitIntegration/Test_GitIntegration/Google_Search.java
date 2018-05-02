@@ -20,7 +20,6 @@ public class Google_Search {
 	@BeforeTest
 	public void setupDriver() {
 		oDriver= new ChromeDriver();
-		
 	}
 	
 	@Test
